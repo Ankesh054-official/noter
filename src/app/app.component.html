@@ -1,4 +1,4 @@
-<main>
-  <navigation-bar></navigation-bar>
-  <content-section></content-section>
+<main [ngClass]="user_logged_In?'loggedIn':'loggedOut'">
+  <navigation-bar class="nav"></navigation-bar>
+  <content-section class="content"></content-section>
 </main>
