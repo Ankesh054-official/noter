@@ -4,7 +4,7 @@
     background-color: $WHITE-COLOR;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 100%;
     height: 100%;
@@ -16,6 +16,7 @@
         text-transform: uppercase;
         font-weight: 600;
         color: black;
+        padding-right: 60px;
     }
     
     .abstract {
@@ -23,7 +24,7 @@
         flex-direction: inherit;
         justify-content: space-between;
         align-items: inherit;
-        width: 70%;
+        width: 45%;
         height: inherit;
 
         .introduction {
@@ -31,8 +32,9 @@
             flex-direction: inherit;
             justify-content: space-between;
             align-items: inherit;
-            width: 25%;
             height: inherit;
+            width: 35%;
+            font-size: 13px;
 
             li {
                 display: inherit;
@@ -41,11 +43,31 @@
                 align-items: center;
                 width: fit-content;
                 height: inherit;
-
+                border: 4px solid rgba(255, 0, 0, 0);
+                
                 a {
                     text-transform: uppercase;
                     font-weight: 600;
                     color: black;
+                }
+
+                .arrow{
+                    width: 0px;
+                    height: 0px;
+                    border: 4px solid rgba(255, 0, 0, 0);
+                    border-top: 4px solid black;
+                    background-color: rgba(255, 0, 0, 0);
+                }
+            }
+
+            li:hover{
+                border-bottom: 4px solid $GREEN-COLOR;
+                a {
+                    color: $GREEN-COLOR;
+                }
+                .arrow{
+                    border-top: 4px solid $GREEN-COLOR;
+                    transform: rotate(-180deg);
                 }
             }
         }
@@ -55,8 +77,9 @@
             flex-direction: inherit;
             justify-content: space-between;
             align-items: inherit;
-            width: 15%;
             height: inherit;
+            width: 25%;
+            font-size: 13px;
 
             li {
                 display: inherit;
@@ -65,11 +88,18 @@
                 align-items: center;
                 width: fit-content;
                 height: inherit;
-
+                border: 4px solid rgba(255, 0, 0, 0);
+                
                 a {
                     text-transform: uppercase;
-                    font-weight: 600;
-                    color: black;
+                    color:black
+                }
+            }
+
+            li:hover{
+
+                a{
+                    color: $GREEN-COLOR;
                 }
             }
         }
