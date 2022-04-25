@@ -9,7 +9,6 @@
     width: 100%;
     height: 100%;
 
-
     .orgName {
         font-family: "Soleil";
         font-size: 30px;
@@ -79,7 +78,7 @@
             align-items: inherit;
             height: inherit;
             width: 25%;
-            font-size: 13px;
+            font-size: 15px;
 
             li {
                 display: inherit;
@@ -91,8 +90,21 @@
                 border: 4px solid rgba(255, 0, 0, 0);
                 
                 a {
-                    text-transform: uppercase;
+                    text-transform: capitalize;
                     color:black
+                }
+
+                .btn{
+                    padding: 9px 18px;
+                    color: $GREEN-COLOR;
+                    border: 2px solid $GREEN-COLOR;
+                    border-radius: 4px;
+                    font-weight: 600;
+                }
+
+                .btn:hover{
+                    color: $LIGHT-GREEN-COLOR;
+                    border: 2px solid $LIGHT-GREEN-COLOR;
                 }
             }
 
@@ -103,6 +115,22 @@
                 }
             }
         }
-    }
+    }    
+    
+}
 
+@media screen and (max-width:900){
+    .header{
+        justify-content: space-between;
+
+        .abstract{
+            display: inherit;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+            z-index: -1;
+        }
+    }
 }
