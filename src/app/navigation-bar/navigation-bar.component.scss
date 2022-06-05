@@ -4,11 +4,11 @@
     background-color: $WHITE-COLOR;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100%;
-
     .orgName {
         font-family: "Soleil";
         font-size: 30px;
@@ -21,14 +21,20 @@
     .abstract {
         display: inherit;
         flex-direction: inherit;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: inherit;
         width: 45%;
         height: inherit;
 
+        .hamburger-menu{
+            display: none;
+        }
+
         .introduction {
             display: inherit;
             flex-direction: inherit;
+            flex-wrap: wrap;
             justify-content: space-between;
             align-items: inherit;
             height: inherit;
@@ -74,6 +80,7 @@
         .userOptions {
             display: inherit;
             flex-direction: inherit;
+            flex-wrap: wrap;
             justify-content: space-between;
             align-items: inherit;
             height: inherit;
