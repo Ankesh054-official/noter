@@ -9,6 +9,8 @@ Table of Contents
 Noter
 =
 
+#### Project Status:
+  <img align="left" alt="Loading" width="300px" src="src/assets/Images/status.png" style="float: left; width: 33.33%; padding: 5px;"/>
 <br>
 <br>
 <br>
